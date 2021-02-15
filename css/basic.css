@@ -1,0 +1,88 @@
+body{
+	margin-left: 61px;
+	margin-right: 61px;
+	background-color: #F4f3ef;
+}
+#logo{
+	width: 200px;
+	height:110px;
+	float: left;
+	padding-top:16px;
+	padding-bottom:16px;
+}
+.nav1{
+	list-style-type:none;
+	overflow: hidden;
+	background-color: #333;
+	border: 2px solid black;
+	border-radius: 6px;
+	margin:0px;
+	padding:0px;
+	margin-bottom:48px;
+	clear:left;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar{
+	float:left;
+}
+.navbar a{
+	display:block;
+	color: white;
+	padding:14px 16px;
+	text-decoration: none;
+}
+.navbar a:hover{
+	background-color: black;
+	color:white;
+}
+
+.header{
+	width:155px;
+}
+.header:hover{
+	text-decoration: solid underline;
+	cursor:pointer;
+}
+.card{
+	margin:7px 12px;
+	background-color:white;
+	float:left;
+	border: 1px solid #eeeee4;
+	border-radius: 6px;
+	width:200px;
+	height:250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .img{
+	border-bottom: 1px solid #eeeee4;
+	border-radius: 6px;
+	width: 198px;
+	height: 170px;
+	text-align:center;
+	
+}
+.card .inf:hover{
+	cursor:pointer;
+}
+.card .img:hover{
+	margin-top:-2px;
+	cursor:pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card p{
+	margin-top:8px;
+	text-align:center;
+	font-family: calibri light;
+	font-size:13px;
+	font-weight:bold;
+}
+.cart{
+	float:right;
+	width: 16px;
+	margin-right: 8px;
+}
+.wish{
+	float:left;
+	width: 16px;
+	margin-left: 8px;
+}

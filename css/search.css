@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+form.searchbar input[type=text] {
+  margin-top:48px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 250px;
+  height:30px;
+  background: #f1f1f1;
+}
+
+form.searchbar button {
+  margin-top:48px;
+  width: 40px;
+  height:30px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchbar button:hover {
+  background: #0b7dda;
+}
