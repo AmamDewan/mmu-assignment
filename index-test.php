@@ -5,19 +5,22 @@
   $sql = "SELECT * FROM product";
   $result = $mysqli->query($sql);
 
+	while($row = $result->fetch_row()) {
+		$rows[]=$row;
+	}
 
-  if ($result->num_rows > 0) {
-    $products = [];
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      $temp = [$row['id'],$row['title'], $row["slug"], $row["price"]];
-      //var_dump($temp);
-      array_push($products,$temp);
-    }
+  // if ($result->num_rows > 0) {
+  //   $products = [];
+  //   // output data of each row
+  //   while($row = $result->fetch_arra()) {
+  //     $temp = [$row['id'],$row['title'], $row["slug"], $row["sku"],$row["imgUrl"],$row["price"]];
+  //     //var_dump($temp);
+  //     array_push($products,$temp);
+  //   }
 
-    var_dump($products);
-  }
-
+  // }
+		var_dump($rows);
+	
     $mysqli -> close();
 ?>
 
@@ -54,8 +57,8 @@
   <?php foreach($products as $product) {?>
 	<div class="card">
 		<p class="inf"><?php echo $product[1] ?></p>
-		<img class="img" src="img/men/accessories/1.jpeg">
-		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[3] ?><img class="cart" src="img/addtocart.png" ></p>
+		<img class="img" src="<?php echo $product[4] ?>">
+		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><img class="cart" src="img/addtocart.png" ></p>
 	</div>
   <?php } ?>
 </section>

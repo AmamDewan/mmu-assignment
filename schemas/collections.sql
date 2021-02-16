@@ -1,10 +1,18 @@
+CREATE TABLE `eshop`.`roles` (
+  `roleId` BIGINT NOT NULL AUTO_INCREMENT,
+  `roleName` VARCHAR(50) NULL DEFAULT NULL,
+  PRIMARY KEY (`roleId`)
+);
+
 CREATE TABLE `eshop`.`user` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NULL DEFAULT NULL,
   `email` VARCHAR(50) NULL,
   `passwordHash` VARCHAR(32) NOT NULL,
+  `userRole` BIGINT NULL,
   `registeredAt` DATETIME NOT NULL,
   PRIMARY KEY (`id`),
+  FOREIGN KEY (`userRole`) REFERENCES `eshop`.`roles`(`roleId`),
   UNIQUE INDEX `uq_email` (`email` ASC) 
 );
 
