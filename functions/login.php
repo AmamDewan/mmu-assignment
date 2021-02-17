@@ -24,6 +24,7 @@
          $_SESSION['login_user'] = $myemail;
          $_SESSION['loggedin'] = true;
          $_SESSION['user_role'] = $row['userRole'];
+         $_SESSION['user_id'] = $row['id'];
     // $_SESSION['username'] = $username;
          header("location: ../index.php");
       }else {

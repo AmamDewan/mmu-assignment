@@ -47,7 +47,6 @@
 	$menProducts = getQueryData($menQuery);
 	$womenProducts = getQueryData($womenQuery);
 	$kidsProducts = getQueryData($kidsQuery);
-
 	$collections = getQueryData($collectionQuery);
 
 
@@ -72,7 +71,7 @@
 	<div class="card">
 		<p class="inf"><?php echo $product[1] ?></p>
 		<img class="img" src="<?php echo $product[4] ?>">
-		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><img class="cart" src="img/addtocart.png" ></p>
+		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><a class="add-to-cart" href="#" data-name="<?php echo $product[1] ?>" data-price="<?php echo $product[5] ?>"><img class="cart" src="img/addtocart.png" ></a></p>
 	</div>
 	<?php } ?>
 </section>
@@ -84,7 +83,7 @@
 	<div class="card">
 		<p class="inf"><?php echo $product[1] ?></p>
 		<img class="img" src="<?php echo $product[4] ?>">
-		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><img class="cart" src="img/addtocart.png" ></p>
+		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><a class="add-to-cart" href="#" data-name="<?php echo $product[1] ?>" data-price="<?php echo $product[5] ?>"><img class="cart" src="img/addtocart.png" ></a></p>
 	</div>
 	<?php } ?>
 </section>
@@ -95,7 +94,7 @@
 	<div class="card">
 		<p class="inf"><?php echo $product[1] ?></p>
 		<img class="img" src="<?php echo $product[4] ?>">
-		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><img class="cart" src="img/addtocart.png" ></p>
+		<p class="inf"><img class="wish" src="img/wishlist.png" >$<?php echo $product[5] ?><a class="add-to-cart" href="#" data-name="<?php echo $product[1] ?>" data-price="<?php echo $product[5] ?>"><img class="cart" src="img/addtocart.png" ></a></p>
 	</div>
 	<?php } ?>
 </section>

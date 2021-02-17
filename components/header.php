@@ -4,8 +4,10 @@
 	<title> eShop - Mens </title>
 	<link rel="stylesheet" href="css/basic.css">
 	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/ebag.css">
 	<link rel="stylesheet" href="css/login.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <!-- new edited file -->
 <body>
@@ -42,7 +44,6 @@
 			<div class="modal-title">
 				<h3 class="title">Login</h3>
 			</div>
-
 			<div class="container">
 				<label for="email"><b>Email</b></label>
 				<input type="text" placeholder="Enter Username" name="email" required>
@@ -61,7 +62,7 @@
 				<span class="psw">Forgot <a href="#">password?</a></span>
 			</div>
 			<div class="container">
-				<p>New here? <a href="#">Register</a></p>
+				<p>New here? <a href="registration.php">Register</a></p>
 			</div>
 		</form>
 	</div>
@@ -70,7 +71,7 @@
 		<li class="navbar"><a href="/">Home</a></li>
 		<li class="navbar"><a href="#news">All-Shops</a></li>
 		<li class="navbar"><a href="#contact">Track-Order</a></li>
-		<li class="navbar" style="float:right"><a class="active" href="../cart.php">eBag</a></li>
+		<li class="navbar" style="float:right"><a class="active" href="../cart.php">eBag(<span class="total-count"></span>)</a></li>
 		<li class="navbar" style="float:right"><a class="active" href="#about">MyOrders</a></li>
 		<li class="navbar" style="float:right"><a class="active" href="#about">Wishlist</a></li>
 	</ul>
