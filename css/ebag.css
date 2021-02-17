@@ -1,0 +1,63 @@
+.bagtxt{
+	text-indent:300px;
+	font-family:arial;
+	float:left;
+	width:50%;
+}
+.totaltxt{
+	text-indent:10px;
+	font-family:arial;
+	float:right;
+	width:45%;
+}
+.bag{
+	overflow:hidden;
+	background-color:white;
+	margin:0;
+	border: 1px solid #f4efef;
+	border-radius:10px;
+	padding-top:6px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:50%;
+	float:left;
+}
+.bag li:first-child{
+	padding:0px 100px;
+}
+.attr{
+	float:left;
+}
+.attr p{
+	font-family:arial;
+	display:block;
+	color:black;
+	text-align:center;
+	padding:6px 40px;
+}
+
+.sbag{
+	overflow:hidden;
+	background-color:white;
+	margin:0;
+	border: 1px solid #f4efef;
+	border-radius:10px;
+	padding-top:6px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:45%;
+	float:right;
+}
+.sbag li:first-child{
+	padding:0px 50px;
+}
+.sbag li:last-child{
+	float:right;
+}
+.sattr{
+	float:left;
+}
+.sattr p{
+	font-family:arial;
+	display:block;
+	color:black;
+	padding:6px 40px;
+}
